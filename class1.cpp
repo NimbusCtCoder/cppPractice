@@ -13,7 +13,7 @@ class Dog {
     string color;
     int age;
     int weight;
-    int dogYearNum;
+    int dogYrNum;
     //constuctor example
     Dog(string aBreed, string aColor, int aAge, int aWeight) {
         breed = aBreed;
@@ -30,8 +30,8 @@ class Dog {
     }
     //method example
     int dogYears() {
-        dogYearNum = age*7;
-        return dogYearNum; 
+        dogYrNum = age*7;
+        return dogYrNum; 
     }
 };
 

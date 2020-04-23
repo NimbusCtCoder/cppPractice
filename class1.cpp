@@ -30,7 +30,7 @@ class Dog {
     }
     //method example
     int dogYears() {
-        dogYearNum = age*8;
+        dogYearNum = age*7;
         return dogYearNum; 
     }
 };

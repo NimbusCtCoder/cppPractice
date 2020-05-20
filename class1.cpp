@@ -9,7 +9,7 @@ int num = 22;
 int *pNum = &num;
 string word = "funny";
 string *pWord = &word;
- int ageDY = 0;
+int ageDY = 0;
 class Dog {
     private:
         string color;
@@ -22,7 +22,7 @@ class Dog {
     //constuctor example
         Dog(string aBreed, string aColor, int aAge, int aWeight) {
             breed = aBreed;
-            color = aColor;
+            setColor(aColor);
             age = aAge;
             weight = aWeight;
         }
@@ -43,6 +43,7 @@ class Dog {
                 color = aColor;
             }
             else {
+                cout << "you entered an invalid color: " << aColor << "; default color brown will be used" << endl;
                 color = "brown";
             }
         }
@@ -67,7 +68,7 @@ int main() {
     cout << "The color of dog1 is: " << dog1.getColor() << endl;
 
     dog1.setColor("orange"); //set color to non possible choice
-        cout << "The color of dog1 is: " << dog1.getColor() << endl;  //default color brown will be displayed
+    cout << "The color of dog1 is: " << dog1.getColor() << endl;  //default color brown will be displayed
 
     // Pointer Exercise
     cout << "Hello World with constrcutors!" << endl;
